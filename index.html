@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -250,7 +251,7 @@
   }
   .price-row{
     display:grid;
-    grid-template-columns:44px 1fr auto auto;
+    grid-template-columns:44px 1fr auto;
     align-items:center;
     gap:18px;
     padding:18px 24px;
@@ -312,9 +313,7 @@
   .foot-bottom .maker{color:var(--accent);}
 
   @media (max-width:640px){
-    .price-row{grid-template-columns:30px 1fr; row-gap:8px;}
-    .price-time{grid-column:1/2; grid-row:2;}
-    .price-amount{grid-column:2/3; grid-row:2; justify-self:end;}
+    .price-row{grid-template-columns:30px 1fr auto;}
   }
 </style>
 </head>
@@ -423,42 +422,36 @@
     <div class="section-head">
       <div class="section-tag">Цены</div>
       <h2>Прайс на услуги</h2>
-      <p class="section-desc">Цены указаны в злотых (zł). Услуги 1–3 занимают около 5 дней.</p>
+      <p class="section-desc">Цены указаны в злотых (zł).</p>
     </div>
 
     <div class="price-table">
       <div class="price-row">
         <span class="price-idx">01</span>
         <span class="price-name">Чистка системы</span>
-        <span class="price-time">~5 дней</span>
         <span class="price-amount">2 zł</span>
       </div>
       <div class="price-row">
         <span class="price-idx">02</span>
         <span class="price-name">Очищение памяти</span>
-        <span class="price-time">~5 дней</span>
         <span class="price-amount">2 zł</span>
       </div>
       <div class="price-row">
         <span class="price-idx">03</span>
         <span class="price-name">Проверка на вирусы</span>
-        <span class="price-time">~5 дней</span>
         <span class="price-amount">3 zł</span>
       </div>
       <div class="price-row">
         <span class="price-idx">04</span>
         <span class="price-name">Проверка телефона</span>
-        <span class="price-time">—</span>
         <span class="price-amount">5 zł</span>
       </div>
       <div class="price-row">
         <span class="price-idx">05</span>
-        <span class="price-name">Чистка звука</span>
-        <span class="price-time">бета</span>
-        <span class="price-amount beta">уточняется</span>
+        <span class="price-name">Чистка звука <span class="badge-beta">бета</span></span>
+        <span class="price-amount">7 zł</span>
       </div>
     </div>
-    <p class="price-note">* Точные цифры сверялись с рукописным прайсом — если что-то не сходится, поправь текст напрямую в файле.</p>
   </div>
 </section>
 
